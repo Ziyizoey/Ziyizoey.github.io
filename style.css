@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Myfont; // 自定义字体名称
+src: url(Gtek-Technology-free-promo-1.ttf)
+}
+body {
+    background-image: url("bg.png");
+}
+.bubble
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    animation: run1 8s infinite linear;
+}
+@keyframes run1 {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 3%;
+    }
+    100% {
+        top: 0;
+    }
+
+}
+.title{
+    margin-bottom: 100px;
+    width: 100%;
+    height: 200px;
+}
+.title img{
+    width: 100%;
+}
+div{
+    margin: 0 auto;
+}
+.Headline{
+    width: 80%;
+    font-size: 39px;
+    text-align: center;
+    line-height:80px;
+    font-family:'Myfont';
+    color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5px;
+}
+.contents {
+    width: 80%;
+    font-size: 30px;
+    font-family: 'Myfont';
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5px;
+    z-index: 1;
+    padding-bottom: 300px;
+    text-shadow: 2px 2px 5px rgb(228, 226, 226);
+}
+.star2{
+    width: 20px;
+    height: 20px;
+    opacity: 80%;
+    position: absolute;
+    animation: run 12s infinite linear;
+}
+@keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 85%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.bottom{
+    position: fixed;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    animation: run2 4s infinite linear;
+}
+@keyframes run2 {
+    0% {
+        opacity: 90%;
+    }
+    50% {
+        opacity: 60%;
+    }
+    100% {
+        opacity: 90%;
+    }
+}
+.circle{
+    animation: rotation 18s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+img{
+    pointer-events: none;
+}
+#if{
+    top: 50px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+iframe{
+    width:1008px;
+    height:576px;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
